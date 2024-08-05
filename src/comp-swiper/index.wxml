@@ -1,0 +1,14 @@
+<!--pages/swiper.wxml-->
+<view class="body-wrapper">
+<view class="swiper swiper-cards swiper-3d swiper-initialized swiper-horizontal swiper-watch-progress">
+  <view class="swiper-wrapper ">
+    <view 
+      wx:for="{{slides}}"
+      wx:key="progress"
+      wx:for-item="item"
+      style="width: 240px; z-index: {{item.zIndex}}; transform: {{item.transform}}"
+      class="swiper-slide"
+     >Slide 1 {{item.zIndex}}</view>
+  </view>
+</view>
+</view>
